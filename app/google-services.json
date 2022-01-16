@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25945871893",
+    "project_id": "villageconnect3-eba9b",
+    "storage_bucket": "villageconnect3-eba9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25945871893:android:f9a7d267e856aa7570e01c",
+        "android_client_info": {
+          "package_name": "zw.co.icetech.villageconnect3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25945871893-tvr715qmpc8cmmggb16t71eloqpc7rs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoK5Ff1AQycd_XjDI2T6U_vfV5PUdsCdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25945871893-tvr715qmpc8cmmggb16t71eloqpc7rs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/txtBookVcard"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:backgroundTint="#3A4D60"
+    app:cardUseCompatPadding="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/txtBookImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/bookico" />
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txtBookImage"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_light"
+        android:maxLines="2"
+        android:text="New venturs maths"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txtBookImage"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_light"
+        android:maxLines="2"
+        android:text="Grade Seven"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/downloadtBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/grade"
+        android:drawableStart="@drawable/download"
+        android:text="Download" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/corners.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/download.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/searchbar_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/searchbtn_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/topsection.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/drawable/transparent_btn.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_books.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_education.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_education_results.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_news.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_open_pdf.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_podcasts.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_primary_papers.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_read_news.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_secondary_papers.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_secondary_txt_books.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/book_item.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/layoutcorners.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/news_item.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/podcast_list_item.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/text_book_item.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VillageConnect3/app/src/main/res/layout/transparent_btn.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
