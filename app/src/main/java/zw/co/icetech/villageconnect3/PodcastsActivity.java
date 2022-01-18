@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +45,7 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
     static Bundle bundle_pd_recyclerview_state;
     PodcastAdapter podcast_adapter ,search_podcast_adapter;
 
+
     //firebase seaarch variables
 
 
@@ -61,6 +63,7 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
 
     //variables for downloading the  podcast audio file
     FirebaseStorage firebaseStorage;
+    FirebaseDatabase firebaseDatabase;
     StorageReference storageReference,ref;
     TextView down_load_pd;
 
@@ -73,6 +76,8 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
         recyclerview_pd = (RecyclerView) findViewById(R.id.recyclerview_pd);
         recyclerview_pd.setLayoutManager(new LinearLayoutManager(this));
 
+
+
         //play podcast variable assignments
         podcast = (TextView) findViewById(R.id.podcast_title);
         btn_next = (ImageButton) findViewById(R.id.btn_next);
@@ -83,12 +88,18 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
         down_load_pd = (TextView) findViewById(R.id.down_load_pd);
         podcast_search_bar = (EditText) findViewById(R.id.podcast_search_bar);
 
+        btn_next.setBackgroundResource(R.drawable.ic_baseline_skip_next_24);
+        btn_prev.setBackgroundResource(R.drawable.prev);
+        btn_play_pause.setBackgroundResource(R.drawable.ic_baseline_play_arrow_24);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
 
+        //allow app to write data offline
+        firebaseDatabase.setPersistenceEnabled(true);
         //connecting to firebase database
         FirebaseRecyclerOptions<PodcastModel> options =
                 new FirebaseRecyclerOptions.Builder<PodcastModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Podcast"), PodcastModel.class)
+                        .setQuery(firebaseDatabase.getReference().child("Podcast"), PodcastModel.class)
                         .build();
 
         podcast_adapter = new PodcastAdapter(options, this);
@@ -231,9 +242,11 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
             //stoping the handler for progress bar
             handler.removeCallbacks(runnable);
             is_playing = false;
+            btn_play_pause.setBackgroundResource(R.drawable.ic_baseline_play_arrow_24);
         }else if(is_playing==false && mediaPlayer != null){
             mediaPlayer.start();
             is_playing=true;
+            btn_play_pause.setBackgroundResource(R.drawable.ic_baseline_pause_24);
         }
     }
 
@@ -290,6 +303,7 @@ public class PodcastsActivity extends AppCompatActivity implements PodcastInterf
 
         if(!is_playing){
             is_playing = true;
+            btn_play_pause.setBackgroundResource(R.drawable.ic_baseline_pause_24);
             this.podcast.setText(podcast);
             String url = podcast_url;
             pd_download_url = url;

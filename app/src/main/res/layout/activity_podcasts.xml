@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/searchbar_bg"
             android:fontFamily="@font/quicksand_light"
             android:hint="Search"
@@ -35,12 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/podcast_search_bar"
+            android:layout_marginTop="30dp"
             android:ellipsize="end"
             android:fontFamily="@font/quicksand_light"
             android:gravity="center_horizontal"
-            android:layout_marginTop="30dp"
             android:maxLines="2"
-            android:text="Talking Farming with Elvin"
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -71,7 +70,7 @@
             android:layout_below="@id/songProgressBar"
             android:layout_marginLeft="145dp"
             android:backgroundTint="#3A4D60"
-            android:src="@drawable/ic_baseline_play_arrow_24" />
+           />
 
         <ImageButton
             android:id="@+id/btn_prev"
@@ -81,7 +80,7 @@
             android:layout_marginLeft="90dp"
             android:layout_marginTop="5dp"
             android:backgroundTint="#3A4D60"
-            android:src="@drawable/prev" />
+            />
 
         <ImageButton
             android:id="@+id/btn_next"
@@ -90,8 +89,7 @@
             android:layout_below="@id/songProgressBar"
             android:layout_marginLeft="210dp"
             android:layout_marginTop="5dp"
-            android:backgroundTint="#3A4D60"
-            android:src="@drawable/ic_baseline_skip_next_24" />
+            android:backgroundTint="#3A4D60" />
 
         <TextView
             android:id="@+id/down_load_pd"
@@ -104,10 +102,11 @@
             android:drawableStart="@drawable/download" />
 
     </RelativeLayout>
+
     <RelativeLayout
+        android:id="@+id/podcast_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/podcast_list"
         android:layout_below="@id/podcast_top_section"
         android:padding="5dp">
 
@@ -115,6 +114,7 @@
             android:id="@+id/recyclerview_pd"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
     </RelativeLayout>
 
 </RelativeLayout>
